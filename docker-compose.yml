@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  account-service:
+    build: ./account-service
+    ports:
+      - "4001:4001"
+
+  devices-service:
+    build: ./devices-service
+    ports:
+      - "4002:4002"
+
+  gateway-service:
+    build: ./gateway-service
+    ports:
+      - "4000:4000"
+    depends_on:
+      - account-service
+      - devices-service
