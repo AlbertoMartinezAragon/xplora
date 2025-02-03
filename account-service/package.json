@@ -1,0 +1,21 @@
+{
+  "name": "account-service",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apollo/federation": "^0.38.1",
+    "@apollo/server": "^4.11.3",
+    "@apollo/subgraph": "^2.9.3",
+    "dotenv": "^16.4.7",
+    "graphql": "^16.10.0",
+    "graphql-tag": "^2.12.6"
+  }
+}
