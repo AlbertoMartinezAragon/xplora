@@ -21,14 +21,12 @@ const server = new ApolloServer({
 });
 const app = express();
 
-// Root route to indicate server is working
 app.get("/", (req, res) => {
   res.send(
     "Apollo Server is running. Go to /graphql to interact with the API."
   );
 });
 
-// Start the Apollo server and apply middleware
 server.start().then(() => {
   server.applyMiddleware({ app, path: "/graphql" });
 
